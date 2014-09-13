@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#submit { display: block;margin: 20px auto 10px auto; }
+		#optionsBox { width:500px; margin: 50px auto; text-align: center; padding: 10px;text-align: justify;box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);font-family: Georgia,Serif;font-size: medium;font-style: italic;letter-spacing: 0.05em;line-height: 1.5em;margin-bottom:20px }
+		#optionsBox table tr td { text-align: right; padding-right:10px;}
+		#optionsBox input[type='text'] { width:100px; }
+		#messages { text-align:right; display:none; color:green; font-size: 12px}
+	</style>
+	<script type="text/javascript" src="../../js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="options.js"></script>
+	<title>History Limiter Options</title>
+</head>
+<body>
+	<div id="optionsBox">
+	<div id="messages"></div>
+		<table>
+			<tr>
+				<td>Number of history items to keep:</td>
+				<td><input type="text" id="historyLimitNumber" name="historyLimitNumber"/></td>
+			</tr>
+			<tr>
+				<td>Number of downloaded history items to keep:</td>
+				<td><input type="text" id="downloadLimitNumber" name="downloadLimitNumber"/></td>
+			</tr>
+		</table>		
+		<input type="button" id="submit" name="submit" value="Save Changes"/>		
+	</div>
+</body>
+</html>
